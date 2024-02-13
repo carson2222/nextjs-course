@@ -8,6 +8,7 @@ export default function ReviewDetail({
     reviewId: string;
   };
 }) {
+  throw new Error("Error loading review");
   if (+params.reviewId > 100) {
     notFound();
   }
